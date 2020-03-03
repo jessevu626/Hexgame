@@ -133,4 +133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21aed2f30b73294ca019567579b0187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileGraphics: []
   hoverAmount: 0.1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  highlightedColor: {r: 0, g: 0, b: 1, a: 0}
+  isWalkable: 0

@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
+    private SpriteRenderer rend;
+    public Sprite[] tileGraphics;
     public float hoverAmount;
     //public int sortingOrderNorm = 5;
     //public int sortingOrderPlus = 7;
     //private SpriteRenderer sprite;
     public LayerMask obstacleLayer;
+    public Color highlightedColor;
+    public bool isWalkable;
+    GameMaster gm;
+        
 
     void Start()
     {
+        gm = FindObjectOfType<GameMaster>();
         //sprite = GetComponent<SpriteRenderer>();
     }
 
@@ -39,6 +46,18 @@ public class Tile : MonoBehaviour
         }
             
        
+    }
+
+    public void Highlight()
+    {
+        rend.color = highlightedColor;
+        isWalkable = true;
+    }
+
+    public void Reset()
+    {
+        rend.color = Color.white;
+        isWalkable = false; 
     }
 
 }
