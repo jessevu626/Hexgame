@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 907458539553914988}
   - component: {fileID: 332910089086622312}
   - component: {fileID: 8989758158623729831}
-  - component: {fileID: 3312810515634233289}
+  - component: {fileID: 6172721771925528294}
   m_Layer: 0
   m_Name: 'STile '
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4579098329376788242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0097, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -108,20 +108,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.5, y: -0.36363637}
-      - {x: 0.5, y: 0.1969697}
-      - {x: 0.3181818, y: 0.25757575}
-      - {x: 0.060606062, y: 0.34848487}
-      - {x: -0.10606061, y: 0.34848487}
-      - {x: -0.1969697, y: 0.3030303}
-      - {x: -0.36363637, y: 0.24242425}
-      - {x: -0.5, y: 0.1969697}
-      - {x: -0.5, y: -0.36363637}
-      - {x: -0.13636364, y: -0.4848485}
-      - {x: 0.13636364, y: -0.4848485}
-      - {x: 0.2878788, y: -0.43939394}
-      - {x: 0.37878788, y: -0.40909094}
---- !u!114 &3312810515634233289
+    - - {x: 0.48388252, y: -0.1621592}
+      - {x: 0.49669227, y: 0.14735425}
+      - {x: 0.374909, y: 0.19456422}
+      - {x: 0.28510532, y: 0.22449887}
+      - {x: 0.014298052, y: 0.31540763}
+      - {x: -0.102752596, y: 0.29225385}
+      - {x: -0.29950896, y: 0.22695291}
+      - {x: -0.36694375, y: 0.19942415}
+      - {x: -0.4999999, y: 0.15066183}
+      - {x: -0.4999999, y: -0.17827725}
+      - {x: -0.05980292, y: -0.3115785}
+      - {x: 0.038737863, y: -0.3173263}
+      - {x: 0.16054067, y: -0.28740096}
+      - {x: 0.3684698, y: -0.21374011}
+      - {x: 0.48355636, y: -0.17134881}
+--- !u!114 &6172721771925528294
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,6 +139,6 @@ MonoBehaviour:
   hoverAmount: 0.1
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
-  highlightedColor: {r: 0, g: 0, b: 1, a: 0}
+    m_Bits: 256
+  highlightedColor: {r: 0.14231041, g: 0.2785226, b: 0.735849, a: 0.5882353}
   isWalkable: 0

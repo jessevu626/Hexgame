@@ -18,6 +18,7 @@ public class Tile : MonoBehaviour
 
     void Start()
     {
+        rend = GetComponent<SpriteRenderer>();
         gm = FindObjectOfType<GameMaster>();
         //sprite = GetComponent<SpriteRenderer>();
     }

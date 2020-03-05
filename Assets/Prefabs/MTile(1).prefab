@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 10296371797725095}
   - component: {fileID: 1352699512993591429}
   - component: {fileID: 1653707806}
-  - component: {fileID: 1653707807}
+  - component: {fileID: 1847044402890865226}
   m_Layer: 0
   m_Name: MTile(1)
   m_TagString: Untagged
@@ -121,7 +121,7 @@ PolygonCollider2D:
       - {x: 0.13636364, y: -0.4848485}
       - {x: 0.2878788, y: -0.43939394}
       - {x: 0.37878788, y: -0.40909094}
---- !u!114 &1653707807
+--- !u!114 &1847044402890865226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,6 +137,6 @@ MonoBehaviour:
   hoverAmount: 0.1
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
-  highlightedColor: {r: 0, g: 0, b: 1, a: 0}
+    m_Bits: 256
+  highlightedColor: {r: 0.14231041, g: 0.2785226, b: 0.735849, a: 0.5882353}
   isWalkable: 0

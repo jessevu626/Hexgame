@@ -99,8 +99,8 @@ MonoBehaviour:
   hoverAmount: 0.1
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
-  highlightedColor: {r: 0, g: 0, b: 1, a: 0}
+    m_Bits: 256
+  highlightedColor: {r: 0.14231041, g: 0.2785226, b: 0.735849, a: 0.5882353}
   isWalkable: 0
 --- !u!60 &4125486077905991754
 PolygonCollider2D:

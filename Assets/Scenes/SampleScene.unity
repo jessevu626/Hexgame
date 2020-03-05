@@ -2147,6 +2147,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5999009760416959035, guid: 0b3d556bc690a6041abf6572746c5213,
+        type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 6130518974414051354, guid: 0b3d556bc690a6041abf6572746c5213,
         type: 3}
       propertyPath: m_Name
@@ -4915,37 +4920,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1928399262}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1139527810 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4579098329376788242, guid: d2d15e93f6a7083469f7ce3199634d11,
-    type: 3}
-  m_PrefabInstance: {fileID: 639267817}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1139527811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 907458539553914988, guid: d2d15e93f6a7083469f7ce3199634d11,
     type: 3}
   m_PrefabInstance: {fileID: 639267817}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1139527813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139527810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e21aed2f30b73294ca019567579b0187, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tileGraphics: []
-  hoverAmount: 0.1
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  highlightedColor: {r: 0, g: 0, b: 0, a: 0}
-  isWalkable: 0
 --- !u!1 &1141138146
 GameObject:
   m_ObjectHideFlags: 0
@@ -9329,7 +9309,7 @@ PrefabInstance:
     - target: {fileID: 907458539553914988, guid: d2d15e93f6a7083469f7ce3199634d11,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.6
+      value: -2.6048
       objectReference: {fileID: 0}
     - target: {fileID: 907458539553914988, guid: d2d15e93f6a7083469f7ce3199634d11,
         type: 3}
@@ -9380,6 +9360,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 907458539553914988, guid: d2d15e93f6a7083469f7ce3199634d11,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0097
       objectReference: {fileID: 0}
     - target: {fileID: 4579098329376788242, guid: d2d15e93f6a7083469f7ce3199634d11,
         type: 3}

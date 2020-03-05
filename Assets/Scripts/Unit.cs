@@ -8,7 +8,6 @@ public class Unit : MonoBehaviour
     GameMaster gm;
     public int tileSpeed;
     public bool hasMoved;
-
     private void Start()
     {
         gm = FindObjectOfType<GameMaster>();
