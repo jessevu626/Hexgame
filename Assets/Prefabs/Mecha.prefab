@@ -206,3 +206,4 @@ MonoBehaviour:
   selected: 0
   tileSpeed: 3
   hasMoved: 0
+  moveSpeed: 10

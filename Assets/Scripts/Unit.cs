@@ -8,6 +8,7 @@ public class Unit : MonoBehaviour
     GameMaster gm;
     public int tileSpeed;
     public bool hasMoved;
+    public float moveSpeed;
     private void Start()
     {
         gm = FindObjectOfType<GameMaster>();
@@ -19,6 +20,7 @@ public class Unit : MonoBehaviour
         {
             selected = false;
             gm.selectedUnit = null;
+            gm.ResetTiles();
         } else
         {
             if (gm.selectedUnit != null)
@@ -28,6 +30,8 @@ public class Unit : MonoBehaviour
 
             selected = true;
             gm.selectedUnit = this;
+
+            gm.ResetTiles();
             GetWalkableTiles();
         }
     }
@@ -50,9 +54,26 @@ public class Unit : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Move(Vector2 tilePos)
     {
-        
+        gm.ResetTiles();
+        StartCoroutine(StartMovement(tilePos));
+    }
+
+    IEnumerator StartMovement(Vector2 tilePos)
+    {
+        while(transform.position.x != tilePos.x)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(tilePos.x, transform.position.y), moveSpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        while (transform.position.y != tilePos.y)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, tilePos.y), moveSpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        hasMoved = true;
     }
 }

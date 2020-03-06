@@ -138,5 +138,5 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
-  highlightedColor: {r: 0.14231041, g: 0.2785226, b: 0.735849, a: 0.5882353}
+  highlightedColor: {r: 0, g: 0, b: 1, a: 1}
   isWalkable: 0

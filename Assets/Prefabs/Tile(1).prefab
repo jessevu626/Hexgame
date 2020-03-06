@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 654824292117773917}
   - component: {fileID: 2590975163257954114}
-  - component: {fileID: 5999009760416959035}
   - component: {fileID: 4125486077905991754}
+  - component: {fileID: 2827404993687735335}
   m_Layer: 0
   m_Name: Tile(1)
   m_TagString: Untagged
@@ -83,25 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5999009760416959035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6130518974414051354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e21aed2f30b73294ca019567579b0187, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tileGraphics: []
-  hoverAmount: 0.1
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  highlightedColor: {r: 0.14231041, g: 0.2785226, b: 0.735849, a: 0.5882353}
-  isWalkable: 0
 --- !u!60 &4125486077905991754
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -140,3 +121,22 @@ PolygonCollider2D:
       - {x: 0.13636364, y: -0.4848485}
       - {x: 0.2878788, y: -0.43939394}
       - {x: 0.37878788, y: -0.40909094}
+--- !u!114 &2827404993687735335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6130518974414051354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21aed2f30b73294ca019567579b0187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileGraphics: []
+  hoverAmount: 0.1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  highlightedColor: {r: 0, g: 0, b: 1, a: 1}
+  isWalkable: 0
